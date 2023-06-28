@@ -1,0 +1,7 @@
+{
+  "name": "ionic-Licores",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
