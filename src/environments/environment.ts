@@ -4,15 +4,14 @@
 
 export const environment = {
   firebase: {
-    projectId: 'licores-app-1e0c1',
-    appId: '1:604810675314:web:d094661ca074ac28b1aeeb',
-    databaseURL: 'https://licores-app-1e0c1-default-rtdb.firebaseio.com',
-    storageBucket: 'licores-app-1e0c1.appspot.com',
-    locationId: 'us-central',
-    apiKey: 'AIzaSyCkHLpwE27pzBqL-qMqrWi0UMD90KpiDc8',
-    authDomain: 'licores-app-1e0c1.firebaseapp.com',
-    messagingSenderId: '604810675314',
-    measurementId: 'G-SCN6QS62BC',
+    apiKey: "AIzaSyDo3gA5ayjW2uY36Jzow-oLL96ddA7cM98",
+    authDomain: "app2022b.firebaseapp.com",
+    databaseURL: "https://app2022b-default-rtdb.firebaseio.com",
+    projectId: "app2022b",
+    storageBucket: "app2022b.appspot.com",
+    messagingSenderId: "430051088078",
+    appId: "1:430051088078:web:d2489c60cfcc8d3af0629f",
+    measurementId: "G-18BCZEN1EZ"
   },
   production: false
 };
