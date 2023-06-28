@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "licores-app-1e0c1": {
+      "hosting": {
+        "app": [
+          "licores-app-1e0c1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "licores-app-1e0c1"
+  }
+}

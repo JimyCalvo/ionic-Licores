@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'make-licor',
+    loadChildren: () => import('./make-licor/make-licor.module').then( m => m.MakeLicorPageModule)
+  },
+  {
+    path: 'edit-licor/:id',
+    loadChildren: () => import('./edit-licor/edit-licor.module').then( m => m.EditLicorPageModule)
+  },
 ];
 
 @NgModule({

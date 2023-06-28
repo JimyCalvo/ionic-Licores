@@ -1,20 +1,37 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Doctors App
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<ion-content>
+  <ion-list class="ios list-ios hydrated">
+    <ion-list-header class="ios hydrated">
+      Licores
+    </ion-list-header>
+    <ion-item *ngFor="let item of Licores" class="user-list">
+      <ion-label>
+        <h5>
+          <ion-icon name="beer-outline"></ion-icon> {{item.name}}
+        </h5>
+        <p>
+          <ion-icon name="tyoe"></ion-icon> {{item.type}}
+        </p>
+        <p>
+          <ion-icon name="tyoe"></ion-icon> {{item.year}}
+        </p>
+        <p>
+          <ion-icon name="tyoe"></ion-icon> {{item.country}}
+        </p>
+      </ion-label>
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/edit-licor/', item.$key]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteLicor(item.$key)">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+  </ion-list>
